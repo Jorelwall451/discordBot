@@ -57,7 +57,7 @@ export default class ExtendedClient extends Client {
     private registerCommands(commands: Array<ApplicationCommandDataResolvable>): void {
         this.application?.commands.set(commands)
             .then(function(){
-                console.log("✔️ Slash Commands (/) defined".green);
+                console.log("✅ Slash Commands (/) defined".green);
             })
             .catch(function(error){
                 throw new Error(`❌ An error ocurred when trying to set the Slash commands(/): ${error}`);
